@@ -1,0 +1,101 @@
+/* 容器通用 */
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  }
+
+/* 页面导航 */
+.m-secondary-navigator {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+.m-secondary-navigator a {
+  color: #333;
+  text-decoration: none;
+}
+.m-secondary-navigator span + span::before {
+  content: " > ";
+  color: #999;
+  margin: 0 5px;
+}
+
+/* 购物车页面外层 */
+.express-append {
+  /* background-color: #f9f9f9; */
+  padding: 30px 0;
+}
+
+/* 空购物车页面容器 */
+.no-good-container {
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* 空购物车提示 */
+.m-exception.m-no-cart .e-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  background: url("https://cdn.cnbj1.fds.api.mi-img.com/youpin-pc/production/YouPin_PC/static3/media/empty-cart.45a7dcdd.png")
+    no-repeat center;
+  background-size: contain;
+}
+
+.m-exception.m-no-cart .e-info {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* 按钮区域 */
+.btn-wrap {
+  margin-top: 20px;
+}
+
+/* 按钮通用 */
+.m-btns {
+  display: inline-block;
+  border-radius: 2px;
+  text-align: center;
+  color: #666;
+  border: 1px solid #666;
+  padding: 0 6px;
+  transition: all 0.3s;
+  min-width: 97px;
+  height: 43px;
+  line-height: 41px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* 默认按钮 */
+.m-btn-default {
+  background-color: white;
+}
+
+/* 灰色按钮 */
+.m-btn-gray {
+  color: #666;
+  border: 1px solid #666;
+}
+.m-btn-gray:hover {
+  color: #fff;
+  background-color: #845f3f;
+  border-color: #845f3f;
+}
+
+.checkout-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
+}

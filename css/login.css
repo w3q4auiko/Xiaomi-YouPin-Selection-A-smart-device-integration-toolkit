@@ -1,0 +1,173 @@
+/* 全局初始化 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 加载图标 */
+#loading-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* 显示在其他元素之上 */
+}
+
+/* 登录容器 */
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 96px 48px;
+  border-radius: 12px;
+}
+
+/* 半透明背景 */
+#login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+/* 输入框容器 */
+#inp div input {
+  width: 326px;
+  height: 62px;
+  margin: 7px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+/* 输入框内 padding & 背景色 */
+.input-container input {
+  padding: 12px 0 0 15px;
+  background-color: #e7e7e7;
+}
+
+/* 输入框包裹结构 */
+.input-container {
+  position: relative;
+  margin: 10px 0;
+}
+
+/* 标签样式 */
+.input-container label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  color: #666;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* 聚焦时标签样式 */
+.input-container.focused label {
+  top: 23px;
+  left: 12px;
+  font-size: 14px;
+  background: inherit;
+}
+
+/* 顶部链接样式 */
+#top {
+  display: flex;
+  font-size: 20px;
+}
+
+/* 登录链接 */
+#top .login {
+  color: #6d4c41;
+  margin-right: 24px;
+  border-bottom: 3px solid #ff5c00;
+  border-radius: 1px;
+  height: 33px;
+  line-height: 33px;
+}
+
+/* 注册链接 */
+#top .signup {
+  color: #4e4b47;
+  margin-right: 24px;
+  height: 33px;
+  line-height: 33px;
+}
+
+/* 超链接样式 */
+a {
+  color: #ff5c00;
+  text-decoration: none;
+}
+
+/* 隐藏元素样式 */
+.hidden {
+  display: none;
+}
+
+/* 加载动画淡出效果 */
+.fade-out {
+  animation: fadeOut 0.5s ease;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#top .login {
+  color: #6d4c41;
+  margin-right: 24px;
+  border-bottom: 3px solid #ff5c00;
+  border-radius: 1px;
+  height: 33px;
+  line-height: 33px;
+}
+
+#top .signup {
+  color: #4e4b47;
+  margin-right: 24px;
+  height: 33px;
+  line-height: 33px;
+}
+
+/* 新增：用于动画过渡 */
+.form-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  position: absolute;
+  width: 100%;
+}
+
+.form-visible {
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 1;
+}
+
+#top a {
+  transition: all 0.3s ease;
+}
+
+#top a.active {
+  color: #000;
+  border-bottom: 3px solid #ff5c00;
+}

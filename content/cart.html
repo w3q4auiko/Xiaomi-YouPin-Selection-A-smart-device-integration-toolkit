@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/logo.png" />
+    <title>购物车 - NexTech</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <!-- TOP开始 -->
+    <div id="topbg">
+      <ul>
+        <li><a href="../topin/login.html?tab=login">登录</a></li>
+        <li><a href="../topin/login.html?tab=signup">注册</a></li>
+        <li><a href="../topin/help.html">帮助中心</a></li>
+        <li>
+          <a href="#"
+            >到小程序
+            <div class="qr-code">
+              <img
+                src="../img/applet.png"
+                alt="QR Code"
+                style="width: 180px; display: block"
+              />
+            </div>
+            <img src="../img/applet_logo.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- TOP结束 -->
+
+    <!-- 欢迎栏开始 -->
+    <div id="content">
+      <div id="navi">
+        <a href="../index.html">
+          <p class="cookie-regular">Welcome , NexTech</p></a
+        >
+        <div id="search-m">
+          <div class="f-search">
+            <div class="search-icon" style="width: 20px; height: 20px">
+              <div style="cursor: default">
+                <svg
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M47.27,43.74,37.5,34A21,21,0,1,0,34,37.5l9.78,9.77a2.5,2.5,0,0,0,3.53-3.53ZM5,21A16,16,0,1,1,21,37,16,16,0,0,1,5,21Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="S-icon">
+              <input type="text" placeholder="扫地机器人" value="" />
+            </div>
+          </div>
+          <div
+            class="m-card-wrap fr"
+            onclick="window.location.href='../content/cart.html'"
+          >
+            <div class="m-card-mini">
+              <div style="width: 25px; height: 25px; cursor: default">
+                <svg
+                  fill="#333"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 41.97 41.04"
+                >
+                  <path
+                    d="M31.74,33.24H16.66c-1.9,0-4.16-1.94-4.49-4.83-.11-.93-.36-3.91-.66-7.35-.39-4.61-.89-10.36-1.17-12.89C9.9,4.3,8.38,3,7.75,3H1.5V0H7.75c2.14,0,4.54,2.05,5.38,6.58H37a4.77,4.77,0,0,1,3.76,1.79,5.5,5.5,0,0,1,1.13,4.5l-.13.67c-.63,3.17-2.3,11.58-3.24,14.56C37.35,31.75,35.39,33.24,31.74,33.24ZM13.5,9.58c.29,2.94.68,7.46,1,11.23.3,3.41.55,6.36.65,7.26a2.5,2.5,0,0,0,1.52,2.17H31.74c2.07,0,3.07-.43,3.9-3,.89-2.82,2.59-11.42,3.15-14.25l.14-.67a2.48,2.48,0,0,0-.51-2A1.84,1.84,0,0,0,37,9.58Z"
+                  ></path>
+                  <circle cx="16.47" cy="37.95" r="3"></circle>
+                  <circle cx="34.32" cy="37.95" r="3"></circle>
+                  <circle cx="1.5" cy="1.5" r="1.5"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 欢迎栏结束 -->
+
+    <!-- 购物车开始 -->
+    <div class="express-append">
+      <div class="container">
+        <div class="m-secondary-navigator">
+          <span><a href="../index.html">首页</a></span
+          ><span><a href="#">购物车</a></span>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- 购物车商品列表容器，JS将在这里动态渲染商品 -->
+        <div id="cart-container"></div>
+      </div>
+
+      <div class="container">
+        <div class="no-good-container">
+          <div class="m-exception m-no-cart">
+            <div class="e-img"></div>
+            <p class="e-info">购物车还是空的</p>
+          </div>
+          <div class="btn-wrap">
+            <a class="m-btn-default m-btns m-btn-gray" href="../index.html"
+              >继续逛</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 购物车结束 -->
+
+    <!-- 版权信息开始  -->
+    <div id="bottom">
+      <div class="container">
+        <h4>© 2025 NexTech. All Rights Reserved.</h4>
+      </div>
+    </div>
+    <!-- 版权信息结束 -->
+    <script src="../js/cart.js"></script>
+  </body>
+</html>
